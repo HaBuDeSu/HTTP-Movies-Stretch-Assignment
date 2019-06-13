@@ -23,7 +23,6 @@ export default class Movie extends React.Component {
     axios.get(`http://localhost:5000/api/movies/${id}`)
     .then(response => this.setState({movie: response.data}))
     .catch(error => console.log(error));
-    console.log(this.state.movie)
   };
 
   saveMovie = () => {
